@@ -1,4 +1,4 @@
-# Samagra Docs
+# Docs Template
 
 ---
 
