@@ -4,7 +4,7 @@ sidebar_label: Overview
 slug: /
 hide_table_of_contents: true
 demoUrl: https://docs-template-main.vercel.app/
-demoSourceUrl: https://github.com/Samagra-Development/samagra-docs
+demoSourceUrl: https://github.com/Samagra-Development/docs-template
 ---
 
 import DocsCard from '@components/global/DocsCard';
