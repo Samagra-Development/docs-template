@@ -3,7 +3,7 @@ title: Samagra Documentation
 sidebar_label: Overview
 slug: /
 hide_table_of_contents: true
-demoUrl: https://turbo-vercel-testjjjj.vercel.app/
+demoUrl: https://docs-template-main.vercel.app/
 demoSourceUrl: https://github.com/Samagra-Development/samagra-docs
 ---
 
@@ -18,7 +18,7 @@ import DocsCards from '@components/global/DocsCards';
   />
   <link rel="rel" href="href" />
 
-  <meta property="og:url" content="https://samagra-docs.vercel.app" />
+  <meta property="og:url" content="https://docs-template-main.vercel.app" />
 </head>
 
 
