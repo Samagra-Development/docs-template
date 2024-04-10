@@ -49,12 +49,12 @@ module.exports = {
       hideOnScroll: true,
       logo: {
         alt: 'Site Logo',
-        src: 'https://tech.samagragovernance.in/wp-content/uploads/2021/02/L2-e1614174909114.png',
-        srcDark: '/logos/dark-logo.png',
+        src: '/logos/SamagraX_light.svg',
+        srcDark: '/logos/SamagraX_dark.svg',
         href: '/',
         target: '_self',
         width: "140px",
-        height: "45px"
+        height: "55px"
       },
       items: [
         {
