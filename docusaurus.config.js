@@ -26,22 +26,6 @@ module.exports = {
   organizationName: 'ionic-team',
   projectName: 'ionic-docs',
   themeConfig: {
-    // metadata: [
-    //   { name: 'og:image', content: 'https://ionicframework.com/docs/img/meta/open-graph.png' },
-    
-    //   {
-    //     name: 'fb:page_id',
-    //     content: '1321836767955949',
-    //   },
-    //   {
-    //     name: 'og:type',
-    //     content: 'website',
-    //   },
-    //   {
-    //     name: 'og:site_name',
-    //     content: 'Ionic Framework Docs',
-    //   },
-    // ],
     colorMode: {
       defaultMode: 'light',
     },
@@ -63,110 +47,10 @@ module.exports = {
           label: 'Guide',
           position: 'left',
         },
-        // {
-        //   type: 'docsVersionDropdown',
-        //   position: 'right',
-        //   dropdownItemsAfter: [
-           
-        //     { to: 'hostedlink', label: 'v1', target: '_blank' },
-        //   ],
-        //   // dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
-        //   dropdownActiveClassDisabled: true,
-        // },
-        // {
-        //   type: 'search',
-        //   position: 'right',
-        // },
-        // {
-        //   label: 'Community',
-        //   position: 'right',
-        //   items: [
-        //     {
-        //       href: 'https://ionicframework.com/community',
-        //       label: 'Community Hub',
-        //       target: '_blank',
-        //       rel: null,
-        //     },
-        //     {
-        //       href: 'https://forum.ionicframework.com/',
-        //       label: 'Forum',
-        //       target: '_blank',
-        //       rel: null,
-        //     },
-        //     {
-        //       href: 'https://www.meetup.com/topics/ionic-framework/',
-        //       label: 'Meetups',
-        //       target: '_blank',
-        //       rel: null,
-        //     },
-        //     {
-        //       href: 'https://blog.ionicframework.com/',
-        //       label: 'Blog',
-        //       target: '_blank',
-        //       rel: null,
-        //     },
-        //     // {
-        //     //   href: 'https://twitter.com/ionicframework',
-        //     //   label: 'Twitter',
-        //     //   target: '_blank',
-        //     //   rel: null,
-        //     // },
-        //   ],
-        //   className: 'navbar__link--community',
-        // },
-        // {
-        //   label: 'Support',
-        //   position: 'right',
-        //   items: [
-        //     {
-        //       href: 'https://ionicframework.com/support',
-        //       label: 'Help Center',
-        //       target: '_blank',
-        //       rel: null,
-        //     },
-        //     {
-        //       href: 'https://ionic.zendesk.com/',
-        //       label: 'Customer Support',
-        //       target: '_blank',
-        //       rel: null,
-        //     },
-        //     {
-        //       href: 'https://ionicframework.com/advisory',
-        //       label: 'Enterprise Advisory',
-        //       target: '_blank',
-        //       rel: null,
-        //     },
-        //   ],
-        //   className: 'navbar__link--support',
-        // },
         {
           type: 'separator',
           position: 'right',
         },
-        // {
-        //   type: 'localeDropdown',
-        //   position: 'right',
-        //   dropdownItemsBefore: [],
-        //   dropdownItemsAfter: [
-        //     {
-        //       href: 'https://ionicframework.com/translate',
-        //       label: 'Translate',
-        //       target: '_blank',
-        //       rel: null,
-        //     },
-        //   ],
-        //   className: 'icon-link language navbar__item',
-        // },
-        // {
-        //   type: 'iconLink',
-        //   position: 'right',
-        //   icon: {
-        //     alt: 'twitter logo',
-        //     src: `/logos/twitter.svg`,
-        //     href: 'https://twitter.com/Ionicframework',
-        //     target: '_blank',
-        //   },
-        // },
         {
           type: 'iconLink',
           position: 'right',
@@ -177,16 +61,6 @@ module.exports = {
             target: '_blank',
           },
         },
-        // {
-        //   type: 'iconLink',
-        //   position: 'right',
-        //   icon: {
-        //     alt: 'discord logo',
-        //     src: `/logos/discord.svg`,
-        //     href: 'https://ionic.link/discord',
-        //     target: '_blank',
-        //   },
-        // },
       ],
     },
     tagManager: {
@@ -253,29 +127,13 @@ module.exports = {
     '@docusaurus/plugin-debug',
     '@docusaurus/plugin-sitemap',
     '@ionic-internal/docusaurus-plugin-tag-manager',
-    // function (context, options) {
-    //   return {
-    //     name: 'ionic-docs-ads',
-    //     async loadContent() {
-    //       const repoName = 'ionicframeworkcom';
-    //       const endpoint = prismic.getEndpoint(repoName);
-    //       const client = prismic.createClient(endpoint, {
-    //         fetch,
-    //       });
-
-    //       return await client.getByType('docs_ad');
-    //     },
-    //     async contentLoaded({ content, actions: { setGlobalData, addRoute } }) {
-    //       return setGlobalData({ prismicAds: content.results });
-    //     },
-    //   };
-    // },
     [
       path.resolve(__dirname, 'plugins', 'docusaurus-plugin-ionic-component-api'),
       {
         versions: VERSIONS_JSON,
       },
     ],
+    "plugin-image-zoom"
   ],
   themes: [
     [
