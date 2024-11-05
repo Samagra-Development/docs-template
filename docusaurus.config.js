@@ -77,6 +77,9 @@ module.exports = {
       indexName: 'ionicframework',
       contextualSearch: true,
     },
+    "imageZoom": {
+      "selector": ".markdown img"
+    },
   },
   plugins: [
     'docusaurus-plugin-sass',
